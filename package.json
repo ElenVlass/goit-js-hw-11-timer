@@ -1,0 +1,30 @@
+{
+  "name": "goit-js-hw-11-timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /goit-js-hw-11-timer/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenVlass/goit-js-hw-11-timer.git"
+  },
+  "author": "Elena_Vlasenko <olefelena@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElenVlass/goit-js-hw-11-timer/issues"
+  },
+  "homepage": "https://github.com/ElenVlass/goit-js-hw-11-timer",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "refs": "^0.9.7"
+  }
+}
