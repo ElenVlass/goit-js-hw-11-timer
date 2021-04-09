@@ -3,9 +3,10 @@ import refs from './refs.js';
 
 
 class CountdownTimer {
-    constructor() {
+    constructor(selector, targetDate) {
+        this.selector = selector;
         this.intervalId = null;
-        this.targetDate = new Date('Apr 25, 2021').getTime();
+        this.targetDate = new Date(`${targetDate}`).getTime();
           
         this.start();
     }
@@ -39,4 +40,4 @@ setClockInterface({ days, hours, mins, secs }) {
 };
 
 
-const timer = new CountdownTimer();
+const timer = new CountdownTimer( '#timer-1', 'Apr 25, 2021');
